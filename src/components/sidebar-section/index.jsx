@@ -1,24 +1,31 @@
+/*
 import { Link } from "react-router-dom";
-import { topics } from "../../utils/consts";
-import Topic from "./topic";
+import PropTypes from "prop-types";
 
-export default function Topics() {
+export default function SidebarSection({ title, children, more }) {
   return (
     <section className="bg-[#16181c] overflow-hidden mb-4 rounded-2xl border border-[#16181c]">
       <h5 className="py-3 px-4 text-xl font-extrabold leading-6 flex items-center text-[#e7e9ea] ">
-        İlgini çekebilecek gündemler
+        {title}
       </h5>
-      <div className="grid">
-        {topics.map((topic, index) => (
-          <Topic item={topic} key={index} />
-        ))}
+      <div className="grid">{children}</div>
+      {more && (
         <Link
-          to="/trends"
+          to={more}
           className="h-[52px] flex items-center px-4 text-[15px] text-[#1d9bf0] transition-colors hover:bg-white/[0.03]"
         >
           Daha fazla göster
         </Link>
-      </div>
+      )}
     </section>
   );
 }
+SidebarSection.propTypes = {
+  title: (<PropTypes></PropTypes>).string.isRequired,
+  children: PropTypes.node.isRequired,
+  more: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+};
+SidebarSection.defaultProps = {
+  more: false,
+}
+*/

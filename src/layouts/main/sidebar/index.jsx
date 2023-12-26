@@ -1,6 +1,6 @@
-import Account from "./account";
 import Logo from "./logo";
 import Menu from "./menu";
+import Account from "./account";
 
 export default function Sidebar() {
   return (

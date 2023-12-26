@@ -1,5 +1,6 @@
 import Premium from "../../../components/premium";
 import Topics from "../../../components/topics";
+import Footer from "./footer";
 import Search from "./search";
 
 export default function RightBar() {
@@ -8,6 +9,7 @@ export default function RightBar() {
       <Search />
       <Premium />
       <Topics />
+      <Footer />
     </aside>
   );
 }

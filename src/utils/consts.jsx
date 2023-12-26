@@ -242,34 +242,4 @@ export const topics = [
     },
     postCount: 13663,
   },
-  {
-    title: "turkıye tarıhınde gundemde",
-    topic: {
-      type: "tag",
-      value: "dilanpolat",
-    },
-  },
-  {
-    title: "turkıye tarıhınde gundemde",
-    topic: {
-      type: "query",
-      value: "Starlink",
-    },
-    postCount: 13663,
-  },
-  {
-    title: "turkıye tarıhınde gundemde",
-    topic: {
-      type: "tag",
-      value: "dilanpolat",
-    },
-  },
-  {
-    title: "turkıye tarıhınde gundemde",
-    topic: {
-      type: "query",
-      value: "Starlink",
-    },
-    postCount: 13663,
-  },
 ];
