@@ -1,7 +1,7 @@
 import store from "../store";
 const states = store.getState();
 
-export const mainMenu = [
+export const  mainMenu = [
   {
     path: "/",
     title: "Anasayfa",

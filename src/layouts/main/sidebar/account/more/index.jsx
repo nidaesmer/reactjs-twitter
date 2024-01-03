@@ -26,7 +26,7 @@ export default function More() {
           <img src={account.avatar} className="w-10 h-10 rounded-full" alt="" />
           <div className="mx-3 flex-1 text-[15px]">
             <h6 className="font-bold leading-[20px]">{account.fullname}</h6>
-            <div className="text-[#71767b]">@{account.username}</div>
+            <div className="text- [color:var(--color-base-secondary)]">@{account.username}</div>
           </div>
           {currentAccount.id === account.id && (
             <svg
@@ -42,13 +42,13 @@ export default function More() {
         </button>
       ))}
       <div className="h-px bg-[#2f3336] my-3" />
-      <button className="py-3 px-4 text-left transition-colors hover:bg-[#eff3f41a] w-full text-[#e7e9ea] text-[15px] font-bold leading-[20px]">
+      <button className="py-3 px-4 text-left transition-colors hover:bg-[#eff3f41a] w-full  text-[15px] font-bold leading-[20px]">
         var olan hesap ekle
       </button>
-      <button className="py-3 px-4 text-left transition-colors hover:bg-[#eff3f41a] w-full text-[#e7e9ea] text-[15px] font-bold leading-[20px]">
+      <button className="py-3 px-4 text-left transition-colors hover:bg-[#eff3f41a] w-full  text-[15px] font-bold leading-[20px]">
         hesapları yönet
       </button>
-      <button className="py-3 px-4 text-left transition-colors hover:bg-[#eff3f41a] w-full text-[#e7e9ea] text-[15px] font-bold leading-[20px]">
+      <button className="py-3 px-4 text-left transition-colors hover:bg-[#eff3f41a] w-full text-[15px] font-bold leading-[20px]">
         <div className="max-w-[228px]">@nidaesmer hesabından çıkış yap</div>
       </button>
     </>
