@@ -1,4 +1,5 @@
 /*
+
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
@@ -21,11 +22,11 @@ export default function SidebarSection({ title, children, more }) {
   );
 }
 SidebarSection.propTypes = {
-  title: (<PropTypes></PropTypes>).string.isRequired,
+  title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
   more: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
 };
 SidebarSection.defaultProps = {
   more: false,
-}
+};
 */

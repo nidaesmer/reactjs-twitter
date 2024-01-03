@@ -11,9 +11,9 @@ export default function Menu() {
   const account = useAccount()
 
   return (
-    <nav className="mt-0.5 mb-1" key={account.id}>
+    <nav className="mt-0.5 mb-1" key={account}>
       {mainMenu.map((menu, index) => (
-        <NavLink key={index} to={menu.path} className="py-[3px] block group">
+        <NavLink key={index} to={typeof menu.path === "function" ? menu.path(): menu.path} className="py-[3px] block group">
           {({ isActive }) => (
             <div
               className={classNames(
