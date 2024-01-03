@@ -36,7 +36,7 @@ export default function AppearanceModal() {
                   @X . 31d
                 </div>
               </header>
-              <div className=" leading-5 text-[15px]">
+              <div className=" text-[#e7e9ea] leading-5 text-[15px]">
                 X'in merkezinde, tıpkı bunun gibi gönderi denen kısa mesajlar
                 yatar. Gönderiler; fotoğraflar, videolar, bağlantılar, metinler,
                 etiketler ve{" "}

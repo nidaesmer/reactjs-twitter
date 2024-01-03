@@ -4,8 +4,8 @@ import Topic from "./topic";
 
 export default function Topics() {
   return (
-    <section className="bg-[#16181c] overflow-hidden mb-4 rounded-2xl border border-[#16181c]">
-      <h5 className="py-3 px-4 text-xl font-extrabold leading-6 flex items-center text-[#e7e9ea] "></h5>
+    <section className="bg-[color:var(--background-secondary)] overflow-hidden mb-4 rounded-2xl border border-[color:var(--background-secondary)]">
+      <h5 className="py-3 px-4 text-xl font-extrabold leading-6 flex items-center text-[#e7e9ea] ">İlgini çekebilecek gündemler</h5>
       <div className="grid">
         {topics.map((topic, index) => (
           <Topic item={topic} key={index} />
