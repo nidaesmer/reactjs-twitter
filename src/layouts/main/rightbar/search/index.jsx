@@ -15,9 +15,9 @@ export default function Search() {
       ref={ref}
       className="min-h-[32px] h-[53px] mb-3 flex items-center sticky top-0 bg-[color:var(--background-primary)] z-10"
     >
-      <label className="h-[43px] rounded-full bg-[color:var(--background-third)] w-full relative group border border-transparent focus-within:bg-black focus-within:border-[#1d9bf0]">
+      <label className="h-[43px] rounded-full bg-[color:var(--background-third)] w-full relative group border border-transparent focus-within:bg-[color:var(--background-primary)] focus-within:border-[#1d9bf0]">
         {focus && (
-          <div className="absolute w-[350px] top-full -left-px -translate-y-1  bg-black shadow-box max-h-[calc(80vh-53px)] rounded-lg text-center min-h-[100px]">
+          <div className="absolute w-[350px] top-full -left-px -translate-y-1  bg-[color:var(--background-primary)] shadow-box max-h-[calc(80vh-53px)] rounded-lg text-center min-h-[100px]">
             <p className="p-3 pt-5 text- [color:var(--color-base-secondary)] leading-5">
               Kişileri, listeleri veya anahtar kelimeleri aramayı dene
             </p>

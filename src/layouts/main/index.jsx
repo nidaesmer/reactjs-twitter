@@ -23,6 +23,10 @@ export default function MainLayout() {
       "--background-third",
       appearance.backgroundColor.third
     );
+    document.documentElement.style.setProperty(
+      "--background-modal",
+      appearance.backgroundColor.modal
+    );
 
 
     document.documentElement.style.setProperty(
@@ -41,6 +45,10 @@ export default function MainLayout() {
       "--color-base-secondary",
       appearance.color.baseSecondary
     );
+    document.documentElement.style.setProperty(
+      "--box-shadow",
+      appearance.color.boxShadow
+    );
 
     document.documentElement.style.setProperty(
       "--font-size",
@@ -53,7 +61,7 @@ export default function MainLayout() {
       {modal && <Modal />}
       <Sidebar />
       <main className="flex-1 flex gap-[30px]">
-        <main className="flex-1 max-w-[600px] border-x border-[#2f3336]">
+        <main className="flex-1 max-w-[600px] border-x border-[color:var(--background-third)]">
           <Outlet />
         </main>
         <RightBar />

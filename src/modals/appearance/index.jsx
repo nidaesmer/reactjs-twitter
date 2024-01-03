@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
+import Button from "../../components/button";
+import { useAppearance } from "../../store/appearance/hook";
 
 export default function AppearanceModal() {
+  const appearance = useAppearance();
+
   return (
     <div className="w-[600px]">
       <h3 className="mt-8 mb-3 text-[23px] leading-7 font-extrabold text-center">
@@ -11,7 +15,7 @@ export default function AppearanceModal() {
           Bu ayarlar, bu tarayıcıdaki tüm X hesaplarını etkiler
         </p>
         <div className="mx-8 mb-4">
-          <div className="border border-[#2f3336] px-4 flex py-3 gap-3 rounded-2xl">
+          <div className="border border-[color:var(--background-third)] px-4 flex py-3 gap-3 rounded-2xl">
             <img
               src="https://pbs.twimg.com/profile_images/1683899100922511378/5lY42eHs_x96.jpg"
               alt=""
@@ -36,7 +40,7 @@ export default function AppearanceModal() {
                   @X . 31d
                 </div>
               </header>
-              <div className=" text-[#e7e9ea] leading-5 text-[15px]">
+              <div className=" text-[color:var(--color-base)] leading-5 text-[15px]">
                 X'in merkezinde, tıpkı bunun gibi gönderi denen kısa mesajlar
                 yatar. Gönderiler; fotoğraflar, videolar, bağlantılar, metinler,
                 etiketler ve{" "}
@@ -47,6 +51,27 @@ export default function AppearanceModal() {
               </div>
             </div>
           </div>
+        </div>
+
+        <div>
+          <h6 className="text-[color:var(--color-base-secondary)] mb-1 leading-5 text-[13px font-bold">
+            Arka plan
+          </h6>
+          <div className="py-1 px-3 mb-3 grid gap-1 grid-cols-3 bg-[color:var(--background-secondary)] rounded-2xl">
+            <button className="h-16 px-5 bg-white text-[#0f1419] border-2 font-bold  border-[color:var(--color-primary)] rounded ">
+              Varsayılan
+            </button>
+            <button className="h-16 px-5 bg-[#15202b] text-[#f7f9f9] border-2 font-bold border-[color:var(--color-primary)] rounded">
+              Loş
+            </button>
+            <button className="h-16 px-5 bg-black text-[#f7f9f9] border-2 font-bold border-[color:var(--color-primary)] rounded">
+              Işıklar kapalı
+            </button>
+          </div>
+        </div>
+
+        <div className="flex items-center justify-center">
+          <Button> Bitti </Button>
         </div>
       </div>
     </div>
