@@ -1,23 +1,24 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  /*
-  ---KOYU----
+  
+  // ---KOYU----
    backgroundColor: {
+    name:"darker",
    primary: "#000 ",
     secondary: "#16181c",
-    third: "#273340",
+    third: "#212327",
       modal: "#5b708366"
   },
    color: {
     primary: "#1d9bf0",
     secondary: "#8ecdf8",
-   base : "#e7e9ea"
+   base : "#e7e9ea",
   baseSecondary: "#71767b"
   },
   boxShadow: "rgba(255, 255, 255, 0.2) 0px 0px 15px, rgba(255, 255, 255, 0.15) 0px 0px 3px 1px",
    fontSize: 16,
-  */
+  
 
    /*
    ---AZ KOYU---
@@ -37,6 +38,7 @@ const initialState = {
   fontSize: 16,
   */
 
+  /*
   backgroundColor: {
     primary: "#fff",
     secondary: "#f7f9f9",
@@ -51,6 +53,7 @@ const initialState = {
   },
   boxShadow: 'rgba(101, 119, 134, 0.2) 0px 0px 15px, rgba(101, 119, 134, 0.15) 0px 0px 3px 1px',
   fontSize: 16,
+  */
 };
 
 const appearance = createSlice({
@@ -67,8 +70,11 @@ const appearance = createSlice({
     _setFontSize: (state, action) => {
       state.fontSize = action.payload;
     },
+    _setBoxShadow: (state, action) => {
+      state.boxShadow = action.payload;
+    },
   },
 });
-export const { _setBackgroundColor, _setColor, _setFontSize } =
+export const { _setBackgroundColor, _setColor, _setFontSize, _setBoxShadow } =
   appearance.actions;
 export default appearance.reducer;

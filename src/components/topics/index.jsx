@@ -12,7 +12,7 @@ export default function Topics() {
         ))}
         <Link
           to="/trends"
-          className="h-[52px] flex rounded-b-2xl items-center px-4 text-[15px] text-[#1d9bf0] transition-colors hover:bg-white/[0.03]"
+          className="h-[52px] flex rounded-b-2xl items-center px-4 text-[15px] text-[color:var(--color-primary)] transition-colors hover:bg-white/[0.03]"
         >
           Daha fazla göster
         </Link>
