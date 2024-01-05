@@ -11,7 +11,7 @@ Bu anket ders esnasında sorulmuştur.`,
         {
           id: 1,
           text: "Evet",
-          votes: 8,
+          votes: 8, 
         },
         {
           id: 2,
