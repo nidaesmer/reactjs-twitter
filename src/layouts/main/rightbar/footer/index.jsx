@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="mb-4 px-4 flex flex-wrap gap-2">
+    <footer className="mb-4 px-4 flex flex-wrap gap-2 text-[0.813rem]">
       <Link
         to="/"
         className="text- [color:var(--color-base-secondary)] leading-4 text-[13px] hover:underline"
@@ -44,7 +44,7 @@ export default function Footer() {
         {" "}
         Reklam bilgisi
       </Link>
-      <div className="w-full flex gap-2">
+      <div className="inline-flex gap-2 flex-wrap">
         <Popover className="relative inline-flex leading-4">
           <Popover.Button className="text- [color:var(--color-base-secondary)] outline-none leading-4 text-[13px] hover:underline inline-flex items-center">
             Daha Fazla
@@ -55,7 +55,7 @@ export default function Footer() {
               />
             </svg>
           </Popover.Button>
-          <Popover.Panel className="w-[150px] max-w-[384px] bg-[color:var(--background-primary)] shadow-box rounded-xl absolute bottom-0 right-0 grid overflow-hidden">
+          <Popover.Panel className="w-[150px] max-w-[384px]  bg-[color:var(--background-primary)] shadow-box rounded-xl absolute bottom-0 right-0 grid overflow-hidden">
             <Link
               to="/"
               className="py-3 px-4 text-white text-[15px] leading-5 font-bold hover:bg-[color:var(--background-secondary)] transition-colors"

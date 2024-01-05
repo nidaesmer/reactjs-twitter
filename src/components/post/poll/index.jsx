@@ -24,7 +24,7 @@ export default function Poll({ poll: pollData }) {
                 }),
               });
             }}
-            className="h-8 border border-[color:var(--color-primary)] rounded-full text-[color:var(--color-primary)] font-bold hover:bg-[color:var(--background-primary)] transition-colors"
+            className="h-8 border border-[color:var(--color-primary)] rounded-full text-[color:var(--color-secondary)] font-bold hover:bg-[color:var(--background-primary)] transition-colors"
             key={answer.id}
           >
             {answer.text}

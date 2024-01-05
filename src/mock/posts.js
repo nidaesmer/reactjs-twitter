@@ -1,35 +1,51 @@
 export const posts = [
   {
     id: "1708632465282150796",
+    type: "photo",
+    content: `herkese slm ifşa olduk buyrun reelimis 🤣`,
+    photos: ["https://i.hizliresim.com/f2pm7dq.jpg"],
+    account: {
+      avatar: "https://i.hizliresim.com/8nqyf2y.jpg",
+      username: "nidaesmer",
+      fullName: "esmer",
+    },
+    stats: {
+      comments: 43535,
+      repost: 3434,
+      like: 96946,
+      view: 903453,
+    },
+  },
+  {
+    id: "1708632465282150796",
     type: "poll",
-    content: `PROTOTURK'un paylaştığı videoları seviyor musunuz?
-Bu anket ders esnasında sorulmuştur.`,
+    content: `nida esmer adlı kişi yazılım olayını yenebilecek mi`,
     poll: {
       voted: false,
       votes: 12,
       answers: [
         {
           id: 1,
-          text: "Evet",
-          votes: 8, 
+          text: "yapabilir",
+          votes: 8,
         },
         {
           id: 2,
-          text: "Hayır",
+          text: "dont",
           votes: 1,
         },
         {
           id: 3,
-          text: "Yaaani",
+          text: "ehhh",
           votes: 3,
         },
       ],
     },
     account: {
       avatar:
-        "https://pbs.twimg.com/profile_images/1200814302820753410/AhAh3xlU_400x400.png",
-      username: "prototurkcom",
-      fullName: "./prototurk",
+        "https://i.hizliresim.com/p2zp733.jpg",
+      username: "esmerx",
+      fullName: "esmerxkanalı",
     },
     stats: {
       comments: 43535,
@@ -39,32 +55,36 @@ Bu anket ders esnasında sorulmuştur.`,
     },
   },
   {
-    id: "1708632465282150796",
+    id: "1708707876628476134",
     type: "photo",
-    content: `Toplu günaydın, ben her sabah spora devam ama her gün post atmıyorum artık, max 4 günde bir atarım çünkü en fazla 4 foto paylaşılıyormuş 🤣`,
+    content: `random fotilere hi diyin!!!!`,
     photos: [
-      "https://pbs.twimg.com/media/F7VBIvaW0AIZyiX?format=jpg&name=large",
+      "https://i.hizliresim.com/dfql8u3.jpg",
+      "https://i.hizliresim.com/1hgymha.jpg",
+      "https://pbs.twimg.com/media/F7aKxHhaAAAnHlS?format=jpg&name=large",
+      "https://i.hizliresim.com/plmk7th.jpg",
     ],
     account: {
-      avatar:
-        "https://pbs.twimg.com/profile_images/1665642354009677824/LNZo7V8x_400x400.jpg",
-      username: "tayfunerbilen",
-      fullName: "Tayfun Erbilen",
+      avatar: "https://i.hizliresim.com/2iieil5.jpg",
+      username: "rowancheung",
+      fullName: "anlamadimkisisi",
+      verified: true,
     },
     stats: {
-      comments: 43535,
-      repost: 3434,
-      like: 96946,
-      view: 903453,
+      comments: 99999,
+      repost: 999999,
+      like: 999999,
+      view: 99999999,
     },
   },
+  
   {
     id: "1708632465282150796",
     type: "photo",
     content: `Imagination Land!`,
     photos: [
       "https://pbs.twimg.com/media/F7ZIK8KWgAAP8pH?format=jpg&name=900x900",
-      "https://pbs.twimg.com/media/F7VBIvZXEAAIpEM?format=jpg&name=large",
+      "https://i.hizliresim.com/qlcarfu.jpg",
     ],
     account: {
       avatar:
@@ -110,7 +130,7 @@ And people have been busy executing god-like tasks.
     photos: [
       "https://pbs.twimg.com/media/F7bpqaKXkAAopDd?format=jpg&name=900x900",
       "https://pbs.twimg.com/media/F7bptMoXYAA7TpB?format=jpg&name=900x900",
-      "https://pbs.twimg.com/media/F8tfk2JWwAAlY3f?format=jpg&name=large",
+      "https://i.hizliresim.com/cawwio9.jpeg",
     ],
     account: {
       avatar:
@@ -125,34 +145,5 @@ And people have been busy executing god-like tasks.
       view: 111144,
     },
   },
-  {
-    id: "1708707876628476134",
-    type: "photo",
-    content: `OpenAI's latest DALL-E 3 model is officially available free to try on Bing.
-
-The quality is insane, comparable to Midjourney.
-
-This prompt is going viral- mimicking a creepy iPhone capture that looks insanely realistic.
-
-Prompt in ALT tag + more examples in thread:`,
-    photos: [
-      "https://pbs.twimg.com/media/F7aKxHhaAAAnHlS?format=jpg&name=large",
-      "https://pbs.twimg.com/media/F7VBIvaW0AAyXEr?format=jpg&name=large",
-      "https://pbs.twimg.com/media/F7VBIvaWAAAWUsx?format=jpg&name=large",
-      "https://pbs.twimg.com/media/F7VBIvaWAAAWUsx?format=jpg&name=large",
-    ],
-    account: {
-      avatar:
-        "https://pbs.twimg.com/profile_images/1617700070710992896/pF3T_gMB_400x400.jpg",
-      username: "rowancheung",
-      fullName: "Rowan Cheung",
-      verified: true,
-    },
-    stats: {
-      comments: 99999,
-      repost: 999999,
-      like: 999999,
-      view: 99999999,
-    },
-  },
+  
 ];
