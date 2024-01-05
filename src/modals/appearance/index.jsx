@@ -11,7 +11,9 @@ import {
 import { colors, fontSizes } from "../../utils/consts";
 import { useEffect, useState } from "react";
 
-export default function AppearanceModal({ close }) {
+export default function AppearanceModal(props) {
+  const { close } = props;
+  console.log("close", close);
   const { backgroundColor, color, fontSize } = useAppearance();
 
   const [fontSizePercent, setFontSizePercent] = useState(0);

@@ -2,7 +2,7 @@ import classNames from "classnames";
 import { createElement } from "react";
 import PropTypes from "prop-types";
 
-export default function Button({ size, children, variant }) {
+export default function Button({ size, children, variant, ...props }) {
   return createElement(
     "button",
     {
@@ -16,6 +16,7 @@ export default function Button({ size, children, variant }) {
           "bg-[#eff3f4] hover:bg-[#d7dbdc] text-black": variant === "white",
         }
       ),
+      ...props,
     },
     children
   );

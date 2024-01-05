@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Poll({ poll: pollData }) {
+export default function Poll({ pollData }) {
   const [poll, setPoll] = useState(pollData);
 
   return (
